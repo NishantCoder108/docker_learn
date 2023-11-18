@@ -8,7 +8,7 @@ WORKDIR /user/src/app
 COPY package*.json ./
 
 #Install dependency
-RUN npm Install
+RUN npm install
 
 #Bundle app source
 COPY . .
@@ -18,3 +18,11 @@ EXPOSE 3000
 
 # Run the app
 CMD [ "node", "index.js" ]
+
+
+
+# After creating image , build docker image
+#  docker build -t nodeapp .
+
+# Agter creating , run container ,expose port
+# docker run -d -p 3000:3000 nodeapp

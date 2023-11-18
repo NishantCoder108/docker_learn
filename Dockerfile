@@ -29,3 +29,7 @@ CMD [ "node", "index.js" ]
 
 # Bash inside Docker
 # docker exec -it 1e33 bash
+
+
+# docker tag nodeapp2 NishantCoder/nodeapp2  --> tagging for push
+# docker push  --> it push images
